@@ -8,6 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../constants'
   <head>
     <title>{SITE_TITLE}-{title}</title>
     <meta name="description" content={SITE_DESCRIPTION} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:title" content="Thamizh Nation" />
     <meta property="og:description" content="Thamizh Nation Images Collection" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -66,63 +67,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../constants'
                       </div>
                      </a>
                   </div>
-                </div>
-                <div class="home-quick-actions">
-                    <img
-                    id="open-mobile-menu"
-                    alt="pastedImage"
-                    src="public/pastedimage-8o98.svg"
-                    class="home-hamburger-menu"
-                  />
-                </div>
-              </div>
-              <div id="mobile-menu" class="home-mobile">
-                <div class="home-top">
-                  <img
-                    alt="image"
-                    src="public/pastedimage-cx4wqj.svg"
-                    class="home-image"
-                  />
-                  <svg
-                    id="close-mobile-menu"
-                    viewBox="0 0 1024 1024"
-                    class="home-icon"
-                  >
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path>
-                  </svg>
-                </div>
-                <div class="home-links1">
-                  <a href="index.html" class="home-navlink2">Thalaivar</a>
-                  </div>
-              </div>
-              <div>
-                <div class="home-container2">
-                  <script>
-                    /*
-                    Mobile menu - Code Embed
-                    */
-
-                    // Mobile menu
-                    const mobileMenu = document.querySelector('#mobile-menu');
-
-                    // Buttons
-                    const closeButton = document.querySelector('#close-mobile-menu');
-                    const openButton = document.querySelector('#open-mobile-menu');
-
-                    if (mobileMenu && closeButton && openButton) {
-                      // On openButton click, set the mobileMenu position left to -100vw
-                      openButton.addEventListener('click', function () {
-                        mobileMenu.style.transform = 'translateX(0%)';
-                      });
-
-                      // On closeButton click, set the mobileMenu position to 0vw
-                      closeButton.addEventListener('click', function () {
-                        mobileMenu.style.transform = 'translateX(100%)';
-                      });
-                    }
-                  </script>
                 </div>
               </div>
             </nav>
