@@ -20,8 +20,8 @@ const imagesForPage: CollectionEntry<'images'>[] = allImages.slice((currentPage 
     <div class="columns-1 gap-5 gap-y-5 p-5 sm:columns-2 md:p-10 lg:columns-3 lg:gap-8 xl:columns-4 mt-5 [&>img:not(:first-child)]:mt-5 lg:[&>img:not(:first-child)]:mt-8">
         <div class="grid gap-4">
             {imagesForPage.map(imgs => (
-            <a href={imgs.data.dwnurl} download>
-                <img class="h-auto max-w" src={imgs.data.imageurl} >
+            <a href={imgs.data.dwnurl} target="_blank">
+                <img class="h-auto max-w" src={imgs.data.imageurl}>
                 </a>
             
         ))}
