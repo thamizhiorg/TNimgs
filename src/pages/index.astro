@@ -5,6 +5,7 @@ import type { CollectionEntry } from "astro:content";
 import { IMGS_PERPAGE } from "../constants";
 import Pagination from "../components/Pagination.astro";
 
+
 const currentPage: number | null = +Astro.url.searchParams.get('page')! || 1;
 
 const allImages: CollectionEntry<'images'>[] = await getCollection('images');
